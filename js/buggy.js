@@ -189,7 +189,7 @@ function jumpTest(obj) {
 }
 
 function box(){
-    can.append("<input id='box' disabled type='text' value='SPACE TO JUMP' />");
+    can.append("<input id='box' disabled type='text' value='SPACE TO JUMP!' />");
     var B = $("#box");
     B.css("position", "absolute");
     B.css("left", W + 50);
