@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>moon-buggy - proof of concept</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!--    <script src="js/p5.js"></script>
+    <script src="js/sketch.js"></script>-->
+	<script>
+        $(document).ready(function() {
+            setup();
+            run();
+            $(document).keydown(function(xKey) {
+		    if (xKey.keyCode === 32) {
+			    jump($("#player"));
+            }
+            });
+        });
+    </script>
+</head>
+
+<body>
+	<div id="can"></div>
+	<script src="js/buggy.js"></script>
+</body>
+
+</html>
